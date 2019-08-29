@@ -32,13 +32,13 @@ open class UnderLineTextField: UITextField {
         super.placeholder = nil
         clearButtonMode = super.clearButtonMode
         placeholderLabel.text = placeholder
-        errorLabel.text = ""
+//        errorLabel.text = ""
         addTarget(self, action: #selector(self.formTextFieldDidBeginEditing), for: .editingDidBegin)
         addTarget(self, action: #selector(self.formTextFieldDidEndEditing), for: .editingDidEnd)
         addTarget(self, action: #selector(self.formTextFieldValueChanged), for: [.editingChanged, .valueChanged])
         NSLayoutConstraint.activate(neededConstraint)
         adjustHeight()
-        errorLabel.alpha = 0
+//        errorLabel.alpha = 0
         text = super.text
     }
 
@@ -71,7 +71,7 @@ open class UnderLineTextField: UITextField {
     /// default is textfield's font
     open var errorFont: UIFont? {
         didSet {
-            errorLabel.font = errorFont ?? font
+//            errorLabel.font = errorFont ?? font
             adjustHeight()
         }
     }
@@ -79,6 +79,11 @@ open class UnderLineTextField: UITextField {
     /// current focus status of textfield (can be active, inactive)
     open var focusStatus: UnderLineTextFieldFocusStatus = .inactive {
         didSet {
+            guard focusStatus != oldValue, contentStatus == .empty else {
+                return
+            }
+            layoutIfNeeded()
+            setPlaceholderPlace(isUp: focusStatus == .active, isAnimated: true)
             setNeedsDisplay()
         }
     }
@@ -86,13 +91,11 @@ open class UnderLineTextField: UITextField {
     /// current content status of textfield (can be empty, filled)
     open var contentStatus: UnderLineTextFieldContentStatus = .empty {
         didSet {
-            guard contentStatus != oldValue else {
+            guard contentStatus != oldValue, focusStatus == .inactive else {
                 return
             }
             layoutIfNeeded()
-            if contentStatus == .empty {
-                setPlaceholderPlace(isUp: false, isAnimated: true)
-            } else {
+            if contentStatus == .filled {
                 setPlaceholderPlace(isUp: true, isAnimated: true)
             }
             setNeedsDisplay()
@@ -202,6 +205,7 @@ open class UnderLineTextField: UITextField {
         button.setImage(clearImage, for: .normal)
         button.setImage(clearImage, for: .highlighted)
         button.addTarget(self, action: #selector(self.clearText), for: .touchUpInside)
+        button.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 15)
         button.tintColor = tintColor
         button.sizeToFit()
         rightView = button
@@ -216,37 +220,37 @@ open class UnderLineTextField: UITextField {
         return layer
     }()
     /// label for displaying error
-    open lazy var errorLabel: UIAnimatableLabel = {
-        let label = UIAnimatableLabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.animationDuration = animationDuration
-        if let fontName = font?.familyName, let size = font?.pointSize {
-            label.font = UIFont(name: fontName, size: size * 0.8)
-        }
-        addSubview(label)
-        neededConstraint.append(NSLayoutConstraint(item: label,
-                                                   attribute: .leading,
-                                                   relatedBy: .equal,
-                                                   toItem: self,
-                                                   attribute: .leading,
-                                                   multiplier: 1,
-                                                   constant: 0))
-        neededConstraint.append(NSLayoutConstraint(item: label,
-                                                   attribute: .bottom,
-                                                   relatedBy: .equal,
-                                                   toItem: self,
-                                                   attribute: .bottom,
-                                                   multiplier: 1,
-                                                   constant: 0))
-        neededConstraint.append(NSLayoutConstraint(item: label,
-                                                   attribute: .trailing,
-                                                   relatedBy: .equal,
-                                                   toItem: self,
-                                                   attribute: .trailing,
-                                                   multiplier: 1,
-                                                   constant: 0))
-        return label
-    }()
+//    open lazy var errorLabel: UIAnimatableLabel = {
+//        let label = UIAnimatableLabel()
+//        label.translatesAutoresizingMaskIntoConstraints = false
+//        label.animationDuration = animationDuration
+//        if let fontName = font?.familyName, let size = font?.pointSize {
+//            label.font = UIFont(name: fontName, size: size * 0.87)
+//        }
+//        addSubview(label)
+//        neededConstraint.append(NSLayoutConstraint(item: label,
+//                                                   attribute: .leading,
+//                                                   relatedBy: .equal,
+//                                                   toItem: self,
+//                                                   attribute: .leading,
+//                                                   multiplier: 1,
+//                                                   constant: 0))
+//        neededConstraint.append(NSLayoutConstraint(item: label,
+//                                                   attribute: .bottom,
+//                                                   relatedBy: .equal,
+//                                                   toItem: self,
+//                                                   attribute: .bottom,
+//                                                   multiplier: 1,
+//                                                   constant: 0))
+//        neededConstraint.append(NSLayoutConstraint(item: label,
+//                                                   attribute: .trailing,
+//                                                   relatedBy: .equal,
+//                                                   toItem: self,
+//                                                   attribute: .trailing,
+//                                                   multiplier: 1,
+//                                                   constant: 0))
+//        return label
+//    }()
 
     /// label for displaying placeholder
     open lazy var placeholderLabel: UIAnimatableLabel = {
@@ -322,6 +326,15 @@ open class UnderLineTextField: UITextField {
             }
         }
     }
+    /// self text label color when textfield is not focused
+    @IBInspectable open var inactiveTextColor: UIColor = UIColor.black {
+        didSet {
+            if oldValue != inactiveTextColor {
+                setNeedsDisplay()
+            }
+        }
+    }
+    
     /// line color when textfield is not focused
     @IBInspectable open var inactiveLineColor: UIColor = .lightGray {
         didSet {
@@ -362,7 +375,7 @@ open class UnderLineTextField: UITextField {
     @IBInspectable open var warningLineColor: UIColor = UIColor.yellow {
         didSet {
             if oldValue != warningLineColor {
-                errorLabel.textColor = errorLineColor
+//                errorLabel.textColor = errorLineColor
                 setNeedsDisplay()
             }
         }
@@ -399,7 +412,7 @@ open class UnderLineTextField: UITextField {
     @IBInspectable open var errorLineColor: UIColor = UIColor.red {
         didSet {
             if oldValue != errorLineColor {
-                errorLabel.textColor = errorLineColor
+//                errorLabel.textColor = errorLineColor
                 setNeedsDisplay()
             }
         }
@@ -437,10 +450,9 @@ extension UnderLineTextField {
             super.font = newValue
             placeholderLabel.font = newValue
             adjustHeight()
-            if let fontName = newValue?.familyName, let size = newValue?.pointSize {
-                errorLabel.font = UIFont(name: fontName, size: size * 0.8)
-            }
-
+//            if let fontName = newValue?.familyName, let size = newValue?.pointSize {
+//                errorLabel.font = UIFont(name: fontName, size: size * 0.87)
+//            }
         }
         get {
             return super.font
@@ -504,17 +516,17 @@ extension UnderLineTextField {
     }
     
     open override func textRect(forBounds bounds: CGRect) -> CGRect {
-        let padding = UIEdgeInsets(top: placeholderHeight - lineHeight - 7, left: 0, bottom: 0, right: 0)
+        let padding = UIEdgeInsets(top: placeholderHeight, left: 0, bottom: 0, right: 20)
         return bounds.inset(by: padding)
     }
     
     open override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        let padding = UIEdgeInsets(top: placeholderHeight - lineHeight - 7, left: 0, bottom: 0, right: 0)
+        let padding = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         return bounds.inset(by: padding)
     }
     
     open override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        let padding = UIEdgeInsets(top: placeholderHeight - lineHeight - 7, left: 0, bottom: 0, right: 0)
+        let padding = UIEdgeInsets(top: placeholderHeight, left: 0, bottom: 0, right: 20)
         return bounds.inset(by: padding)
     }
 
@@ -531,21 +543,22 @@ extension UnderLineTextField {
 
     func changeSementics() {
         if semanticContentAttribute == .forceRightToLeft {
-            errorLabel.textLayer.alignmentMode = CATextLayerAlignmentMode.right
+//            errorLabel.textLayer.alignmentMode = CATextLayerAlignmentMode.right
             placeholderLabel.textLayer.alignmentMode = CATextLayerAlignmentMode.right
         } else {
-            errorLabel.textLayer.alignmentMode = CATextLayerAlignmentMode.left
+//            errorLabel.textLayer.alignmentMode = CATextLayerAlignmentMode.left
             placeholderLabel.textLayer.alignmentMode = CATextLayerAlignmentMode.left
         }
     }
 
     /// change visibilty of error label
     func changeErrorLabelVisibilty(visible: Bool) {
-        errorLabel.changeText(toColor: errorLabelColor, animated: true)
-        UIView.animate(withDuration: animationDuration,
-                       animations: {
-                        self.errorLabel.alpha = visible ? 1 : 0
-        })
+//        errorLabel.changeText(toColor: errorLabelColor, animated: true)
+//        UIView.animate(withDuration: animationDuration,
+//                       animations: {
+//                        self.errorLabel.alpha = visible ? 1 : 0
+//        })
+        self.textColor = visible ? errorLabelColor : inactiveTextColor
     }
 
     /// decide if text is empty or not
@@ -562,7 +575,7 @@ extension UnderLineTextField {
         let lineHeight = textHeightForFont(font: font) + 8
         let placeholderHeight = textHeightForFont(font: placeholderFont)
         let errorHeight = textHeightForFont(font: errorFont)
-        let height =  lineHeight + placeholderHeight * 0.8 + errorHeight
+        let height =  lineHeight + placeholderHeight * 0.87 + errorHeight
         heightConstraint.constant = height
         guard isLayoutCalled else { return }
         layoutIfNeeded()
@@ -571,12 +584,12 @@ extension UnderLineTextField {
     /// change placeholder Place
     private func setPlaceholderPlace(isUp: Bool, isAnimated: Bool) {
         if isUp {
-            let scaleTransform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+            let scaleTransform = CGAffineTransform(scaleX: 0.87, y: 0.87)
             let dummy = UIView()
             dummy.frame = placeholderLabel.frame
             dummy.transform = scaleTransform
             let translateTranform = CGAffineTransform(translationX: placeholderLabel.frame.origin.x - dummy.frame.origin.x,
-                                                      y: -dummy.frame.origin.y)
+                                                      y: -dummy.frame.origin.y + 8)
             guard isAnimated else {
                 placeholderLabel.textColor = placeholderColor
                 placeholderLabel.transform = scaleTransform.concatenating(translateTranform)
@@ -613,9 +626,10 @@ extension UnderLineTextField {
     /// create line bezier path
     private func createLinePath() -> UIBezierPath {
         let path = UIBezierPath()
-        let heightLine = (font?.pointSize ?? 0) + 8
-        let placeholderLine = textHeightForFont(font: placeholderFont) + 4
-        let padding = heightLine + placeholderLine * 0.8
+        let heightLine = textHeightForFont(font: font) + 8
+        let placeholderLine = textHeightForFont(font: placeholderFont)
+        let errorHeight = textHeightForFont(font: errorFont) - 3
+        let padding = heightLine + placeholderLine * 0.87 + errorHeight
         path.move(to: CGPoint(x: 0, y: padding))
         path.addLine(to: CGPoint(x: bounds.maxX, y: padding))
         return path
@@ -639,11 +653,11 @@ extension UnderLineTextField {
              status = .normal
         } catch UnderLineTextFieldErrors.error(let message) {
             status = .error
-            errorLabel.text = message
+//            errorLabel.text = message
             throw UnderLineTextFieldErrors.warning(message: message)
         } catch UnderLineTextFieldErrors.warning(let message) {
             status = .warning
-            errorLabel.text = message
+//            errorLabel.text = message
             throw UnderLineTextFieldErrors.warning(message: message)
         } catch {
             throw error

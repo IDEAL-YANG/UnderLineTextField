@@ -13,6 +13,8 @@
 		846437DE1F967B6200C584A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846437DC1F967B6200C584A7 /* Main.storyboard */; };
 		846437E01F967B6200C584A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846437DF1F967B6200C584A7 /* Assets.xcassets */; };
 		846437E31F967B6200C584A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846437E11F967B6200C584A7 /* LaunchScreen.storyboard */; };
+		96A59B3823179C8F00275523 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A59B3723179C8F00275523 /* DemoViewController.swift */; };
+		96A59B3A23179DDD00275523 /* DesignInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A59B3923179DDD00275523 /* DesignInputCell.swift */; };
 		BEABB25B53432468729D680A /* Pods_UnderLineTextField_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1825173E3F0FA654C3C2E /* Pods_UnderLineTextField_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		846437E41F967B6200C584A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86D1825173E3F0FA654C3C2E /* Pods_UnderLineTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderLineTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9312EF939369A27AF5666424 /* Pods-UnderLineTextField-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderLineTextField-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnderLineTextField-Example/Pods-UnderLineTextField-Example.release.xcconfig"; sourceTree = "<group>"; };
+		96A59B3723179C8F00275523 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		96A59B3923179DDD00275523 /* DesignInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignInputCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				846437D81F967B6200C584A7 /* AppDelegate.swift */,
 				846437DA1F967B6200C584A7 /* ViewController.swift */,
 				504561DF2127E9D400B6F828 /* KeyboardObserver.swift */,
+				96A59B3723179C8F00275523 /* DemoViewController.swift */,
+				96A59B3923179DDD00275523 /* DesignInputCell.swift */,
 				846437DC1F967B6200C584A7 /* Main.storyboard */,
 				846437DF1F967B6200C584A7 /* Assets.xcassets */,
 				846437E11F967B6200C584A7 /* LaunchScreen.storyboard */,
@@ -103,7 +109,6 @@
 				846437D21F967B6200C584A7 /* Frameworks */,
 				846437D31F967B6200C584A7 /* Resources */,
 				64E321A738EF2B35D459B2D7 /* [CP] Embed Pods Frameworks */,
-				606A80AA0752E9C801DEB61C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,7 +132,7 @@
 					846437D41F967B6200C584A7 = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 1000;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -163,37 +168,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		606A80AA0752E9C801DEB61C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnderLineTextField-Example/Pods-UnderLineTextField-Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		64E321A738EF2B35D459B2D7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-UnderLineTextField-Example/Pods-UnderLineTextField-Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-UnderLineTextField-Example/Pods-UnderLineTextField-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/UnderLineTextField/UnderLineTextField.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UnderLineTextField.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnderLineTextField-Example/Pods-UnderLineTextField-Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UnderLineTextField-Example/Pods-UnderLineTextField-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A7C391F287276B45E569439E /* [CP] Check Pods Manifest.lock */ = {
@@ -221,9 +213,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A59B3A23179DDD00275523 /* DesignInputCell.swift in Sources */,
 				846437DB1F967B6200C584A7 /* ViewController.swift in Sources */,
 				504561E02127E9D400B6F828 /* KeyboardObserver.swift in Sources */,
 				846437D91F967B6200C584A7 /* AppDelegate.swift in Sources */,
+				96A59B3823179C8F00275523 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,13 +359,14 @@
 			baseConfigurationReference = 79B9D1D6E5E0341FEBE12025 /* Pods-UnderLineTextField-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DF298Y52D4;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LDC94DLGLZ;
 				INFOPLIST_FILE = "UnderLineTextField-Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mohammadalijf.UnderLineTextField-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard for dev";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,13 +377,15 @@
 			baseConfigurationReference = 9312EF939369A27AF5666424 /* Pods-UnderLineTextField-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DF298Y52D4;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LDC94DLGLZ;
 				INFOPLIST_FILE = "UnderLineTextField-Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mohammadalijf.UnderLineTextField-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard for adhoc";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

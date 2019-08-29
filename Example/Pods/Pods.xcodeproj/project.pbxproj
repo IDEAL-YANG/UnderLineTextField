@@ -3,281 +3,481 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04793465D024CBEB80345668162DDDF5 /* UnderLineTextFieldFocusStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF683C7DF7F667D0BF0FCA4EBA65E3E /* UnderLineTextFieldFocusStatus.swift */; };
-		14B93076178CDE0968EFAA810F722036 /* UnderLineTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EB322ABC7CF1B3905946EAB1B7AF53 /* UnderLineTextField-dummy.m */; };
-		2814E4255198B28253A69B53EACCD2BA /* Pods-UnderLineTextField-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72ECECCAE5008F45D5691BEB1D8C9B1C /* Pods-UnderLineTextField-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28B1C407B07577B004FEF379C1E8958A /* UnderLineTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E22ED537AF16F1CA0AA3171A92DAD /* UnderLineTextFieldDelegate.swift */; };
-		2FB24691E40B8A6FC7762D6CE747A21C /* UnderLineTextFieldContentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6F1FC679215397144D51F008932AB9 /* UnderLineTextFieldContentStatus.swift */; };
-		2FF40480940B529245F28132420BBD9C /* UnderLineTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E71E09B58239410D8A014CD62C76681 /* UnderLineTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55463306914DA5FC497728B83573D968 /* VerticalAlignmentTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90200C42D2DE0FBF3201845C2AD62B3D /* VerticalAlignmentTextLayer.swift */; };
-		6A82296D35273634A218C7052CC7A209 /* UIAnimatableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60EE6CE92233344B532EF795E126D01 /* UIAnimatableLabel.swift */; };
-		711A27DA323EF872B11BA6A60AFC8D9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		824FB0595B4B2C347194627BEF995E27 /* Pods-UnderLineTextField-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 758B0B442620F0575576C9781A0DBD8D /* Pods-UnderLineTextField-Example-dummy.m */; };
-		B2D2C487218C1B48594928B721A8908D /* UnderLineTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A4BCF575353CF1B74956999ED346CF /* UnderLineTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8D8CB01585501EAB164EF4255072A2F /* UnderLineTextFieldValidateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C4AC610A50E602AE588F6B0E4FBFEF /* UnderLineTextFieldValidateType.swift */; };
-		BC151A09B5DB7528C87AE9BDCDEFD27C /* UnderLineTextFieldStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD565315F65CDDD2E24DAFBDF1968BC /* UnderLineTextFieldStatus.swift */; };
-		C8D743481265C284A01A4EEC63DBA1E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		E2B63DCEEBC4E08DAA3E756BE2FB9E08 /* UnderLineTextFieldErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EB6103B38C5A0B77F737DC720AD015 /* UnderLineTextFieldErrors.swift */; };
-		F4DDB2E52F0A047FA3A59C3C5B999604 /* Extera.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4434BF0A8F864953694FB7A690552 /* Extera.xcassets */; };
-		FBFFB63D9E63CB1563B386461387C83D /* UnderLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E49A6813FDE8E3C6A1359D53BC800D /* UnderLineTextField.swift */; };
+		095547A88EE037F12395713A469C9B60 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62526768B0933882A844A3CC52757009 /* ConstraintLayoutSupport.swift */; };
+		0D7A7F3919AE48736753181756DE8AE8 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A156835F5B20B0DE5962C7DD63E2E761 /* Typealiases.swift */; };
+		0FA8E62C7A4A6DA9BB841007B5E16CD4 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA20D94D18B89BCA5CF2600878CAB42 /* ConstraintMakerFinalizable.swift */; };
+		124524F9C365A5B3CC1629EDA5E28322 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		14BEEBA3862431874B0C731ADBFC2CC3 /* Extera.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D27B5A4EE9026FE59DC436037548CB /* Extera.xcassets */; };
+		14E9ACC5796C5E35C84DD6659BEB788F /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC92BE130C0A4CE98F06E9D397E55AF /* ConstraintPriorityTarget.swift */; };
+		1DF884B7E3B22CE985EA2DD10BF7CFAD /* UnderLineTextFieldFocusStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BAA6CA944A7DA1E94B1A96D030E86 /* UnderLineTextFieldFocusStatus.swift */; };
+		276EE563D9B688173DBBF47DB80D72D8 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9E8324D0994261E310D8C9ABB5015C /* ConstraintLayoutGuideDSL.swift */; };
+		28400157B63F40AA135BF16780AB4B96 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FED189CE3C9928FFAF66C86038ABFDB1 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35CDFA197D8219EB8DEFC227259A5C03 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED05C0772840EE66B3EB754BEF846F7A /* ConstraintMakerRelatable.swift */; };
+		4268E348E6D5E9037A640ADC8E065009 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A26D91B0E800F3CC711EB9D4B7D643D /* ConstraintMakerEditable.swift */; };
+		53E0A8281004CA0BBC1C56573C9A2426 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		54D1686EFA926E23C4BED5EEE7A19C08 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A3ECCB7489854CAA077B5B187C912D /* ConstraintInsets.swift */; };
+		5544BDD6A14E06C7FB3A878BC3E96299 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C9D6FEF48994711991A348A7B0B99A /* ConstraintView.swift */; };
+		5C012339EED5BA959C75D3C38B422ADA /* UnderLineTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 068635EFE5BB553813174407D50F8072 /* UnderLineTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C376607904258A10F4DDD6D42EFC491 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F812B71438F709C9BBB7D4B438DAA8B /* ConstraintMaker.swift */; };
+		5DBFB9A0499F04CBE806486211A4ABD0 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD313B584F4DD046DAD1E1A5DBA2AA9A /* SnapKit-dummy.m */; };
+		5E1D627F9A986C60CAA95BFF0E07E578 /* UnderLineTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99ECF8C37862B651932E21125B793CE /* UnderLineTextFieldDelegate.swift */; };
+		67776864843D84DC929C1B66FF8C94F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		6B43F2F53DD6C161CF414A9BF67550C5 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DC83113A26BB1DB9ED37E0EE3F512 /* ConstraintDSL.swift */; };
+		72C2B5D60A24B4B663C8994276A962B6 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21B4EB2CAC44390D976C65ABE1CE2F5 /* ConstraintOffsetTarget.swift */; };
+		77A618FE4FF299682F776C974300EBA1 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB05D22C92E5A571A653D510E552AC0 /* ConstraintView+Extensions.swift */; };
+		7ED12926E82C9D1DE457504DA75B80A9 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3D1E72289667D4BA6D946E25320953 /* LayoutConstraintItem.swift */; };
+		817E4B85539E68BEE32353B3271CC5F2 /* UnderLineTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D06C93F8C326CCE0659EBBFEE7284E9F /* UnderLineTextField-dummy.m */; };
+		8B8BE709B46663F60DB6A661A3B2A28A /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F1619E6AE6BAD68A1F802AD244BFAB /* ConstraintMakerPriortizable.swift */; };
+		8FBB077A5E2A580630B80818F146092C /* VerticalAlignmentTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0753348675A695F5D67145D5F9E8CC7 /* VerticalAlignmentTextLayer.swift */; };
+		92B87924C9851AB68199108777EFEEB8 /* UnderLineTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CDA88B95EE9673D9D3B2334704365C5 /* UnderLineTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9432185152350A4A90F6DD19C33AC057 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5937AEDD4F642E09E0A1980BCC652 /* Debugging.swift */; };
+		98AE4E2F24A858A47B5A1B405CEAD8FD /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C87F70E835D22459F492D40CB584A67 /* UILayoutSupport+Extensions.swift */; };
+		9E6184458532BFF2E3E3F804C54BD0E7 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7597745DD02F02027BEB927801E4E7E2 /* ConstraintDescription.swift */; };
+		9EE2D363A721ACFA89B5B899E1987633 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784E71663FDE42A52D425DA752FC02E7 /* ConstraintConstantTarget.swift */; };
+		A04D46C4C48247D004BAE5C7AD6E05A3 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A533BD0DE17143457FB42BF7749CDD /* ConstraintConfig.swift */; };
+		A3DEA82F229FDF7C9444CEFEE3D9AB84 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C12038B34951B9B002DAB0D5FE023DA /* ConstraintMultiplierTarget.swift */; };
+		A4070B8C9BD30965648B2876CD3C1C43 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD64C66CE4DDF29ECD54691C69DE81 /* ConstraintAttributes.swift */; };
+		A482F623A133B7E947C01456C779622A /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FED143DE8DD1AC41D71D22AEA464B /* ConstraintPriority.swift */; };
+		A6673CA68E30B54DE5B2A3FC26FEF1F3 /* UnderLineTextFieldErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44FCAE24C9623EE9DB517782FBFED1 /* UnderLineTextFieldErrors.swift */; };
+		A7101591C5EE2E044B5B3A87BA6AAC4E /* UnderLineTextFieldContentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D148D9B764A5E8D98C9F68F355D0EDB /* UnderLineTextFieldContentStatus.swift */; };
+		B5DB71AC01A31034154EE662CE604A51 /* UnderLineTextFieldValidateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EB361537310A98E43BF00388BE04E2 /* UnderLineTextFieldValidateType.swift */; };
+		BDF1F717DAE4ACD2D717897D282E6A6F /* Pods-UnderLineTextField-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA1F72F8CF5B7EE826D8D247C8DFF3 /* Pods-UnderLineTextField-Example-dummy.m */; };
+		BF7843175A0FB0180B6F4C0249B8874A /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EFBC475A6AD866A5083DC5F61B3563 /* LayoutConstraint.swift */; };
+		C0D67C782140CF6156BEC4E7A44B7802 /* UnderLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02305B264451C52DF36B8D920501F570 /* UnderLineTextField.swift */; };
+		C17450D20B8B9C0CB67E392F729DBC9D /* UIAnimatableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DE4FFE89C84A8BE0766FA3C920917 /* UIAnimatableLabel.swift */; };
+		C1C2B61E08DAD3B59BA5D82964D39C3C /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B2FDCEA78DB15010A749F9203D21F /* ConstraintRelation.swift */; };
+		C2954E2786B3A6024CC0BB5E15465F45 /* Pods-UnderLineTextField-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02ACA667D9BC87D1D6CDD7094E832F43 /* Pods-UnderLineTextField-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA0FAE669FAB7067D09F7007AD838E19 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65BFCA0A21044C1C3E6F663BB5F9B48 /* ConstraintItem.swift */; };
+		DBB93D3827327B8FB4CFA164C03357E5 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144DAF3614C757BDAABBA78E4B4866FC /* ConstraintLayoutGuide+Extensions.swift */; };
+		DCCEFF1B52226DE5ABB2D0043442FE61 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C417784A7C0566CA3A4A90F972ECD6E6 /* Constraint.swift */; };
+		DEC3E541DB551729EC407FA6566CEE54 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E4E3541BF32A5C4247EA2CC09B4BE /* ConstraintViewDSL.swift */; };
+		E85BBB972867783044ADCD772438150F /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA57917D5E295BADC0B25F3CDB9C4E8 /* ConstraintRelatableTarget.swift */; };
+		F41CA723E31884664B9C032D90EAEF1A /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A12656157BC29CB51F2534C8EDF360 /* ConstraintInsetTarget.swift */; };
+		F4AD0A86A48E1232A07E904913F17C05 /* UnderLineTextFieldStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90533E7B350E331EF614F02D3013039 /* UnderLineTextFieldStatus.swift */; };
+		F6C7F81AA5BBC4042A3A78D5EA8E62A4 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5902768DE34E1627B020F4B2FB7BBBE /* ConstraintLayoutSupportDSL.swift */; };
+		FF0E3F8B3FB568ACBB1BC433D67ED093 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902CDA99715ADA3EC010544308DA63A /* ConstraintMakerExtendable.swift */; };
+		FFE7A02118B5288BC94F7422D6CFEB3F /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DE5B5F4B593DDCE0ADE8616B85C5A /* ConstraintLayoutGuide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		95824D51A226674EDB8C9000C2FE8C4B /* PBXContainerItemProxy */ = {
+		3BE54D1442373D58707B6B8C7C8E0FE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D101AEE48A4163A8E925243B876D59DA;
+			remoteGlobalIDString = 8F053E4403E585BC541528D70CF6895A;
 			remoteInfo = UnderLineTextField;
+		};
+		BC841153BB407063DB8EC3D7A60BD47B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E432CD8D683E718106EBE6B34610B34 /* UnderLineTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UnderLineTextField.modulemap; sourceTree = "<group>"; };
-		13E49A6813FDE8E3C6A1359D53BC800D /* UnderLineTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnderLineTextField.swift; path = Source/UnderLineTextField/UnderLineTextField.swift; sourceTree = "<group>"; };
-		15EB322ABC7CF1B3905946EAB1B7AF53 /* UnderLineTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UnderLineTextField-dummy.m"; sourceTree = "<group>"; };
-		19EB6103B38C5A0B77F737DC720AD015 /* UnderLineTextFieldErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnderLineTextFieldErrors.swift; sourceTree = "<group>"; };
-		1AF683C7DF7F667D0BF0FCA4EBA65E3E /* UnderLineTextFieldFocusStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnderLineTextFieldFocusStatus.swift; sourceTree = "<group>"; };
-		1B72EF28D070B1C1D2C47CAE175F5F60 /* Pods-UnderLineTextField-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UnderLineTextField-Example.release.xcconfig"; sourceTree = "<group>"; };
-		1E6F1FC679215397144D51F008932AB9 /* UnderLineTextFieldContentStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnderLineTextFieldContentStatus.swift; sourceTree = "<group>"; };
-		271E22ED537AF16F1CA0AA3171A92DAD /* UnderLineTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnderLineTextFieldDelegate.swift; sourceTree = "<group>"; };
-		29E829056DF2D5CA829C9C77D70B6280 /* Pods-UnderLineTextField-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UnderLineTextField-Example.modulemap"; sourceTree = "<group>"; };
-		30A4BCF575353CF1B74956999ED346CF /* UnderLineTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnderLineTextField-umbrella.h"; sourceTree = "<group>"; };
-		31C4AC610A50E602AE588F6B0E4FBFEF /* UnderLineTextFieldValidateType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnderLineTextFieldValidateType.swift; sourceTree = "<group>"; };
-		3FE4C6A77B23A9DAC621E345E2DD0332 /* Pods_UnderLineTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderLineTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4402A47783C6ACAA44C9E3A32A317C7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5474202B89C1E68D413A4090786C20BF /* Pods-UnderLineTextField-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UnderLineTextField-Example-frameworks.sh"; sourceTree = "<group>"; };
-		548D97F59DB32084B22AE52B1130E3F7 /* UnderLineTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UnderLineTextField.xcconfig; sourceTree = "<group>"; };
-		64217C669FE051A1DE29939C23D140E7 /* Pods-UnderLineTextField-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UnderLineTextField-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6AA4434BF0A8F864953694FB7A690552 /* Extera.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Extera.xcassets; path = "Source/UnderLineTextField/Supporting Files/Extera.xcassets"; sourceTree = "<group>"; };
-		72ECECCAE5008F45D5691BEB1D8C9B1C /* Pods-UnderLineTextField-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UnderLineTextField-Example-umbrella.h"; sourceTree = "<group>"; };
-		758B0B442620F0575576C9781A0DBD8D /* Pods-UnderLineTextField-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UnderLineTextField-Example-dummy.m"; sourceTree = "<group>"; };
-		8A07E5D086C4E813C7C1D802299BA520 /* Pods-UnderLineTextField-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UnderLineTextField-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		90200C42D2DE0FBF3201845C2AD62B3D /* VerticalAlignmentTextLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalAlignmentTextLayer.swift; path = Source/UnderLineTextField/VerticalAlignmentTextLayer.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E5A2BF006767081837265930B5E9F96 /* Pods-UnderLineTextField-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UnderLineTextField-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9E71E09B58239410D8A014CD62C76681 /* UnderLineTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UnderLineTextField.h; sourceTree = "<group>"; };
-		C60EE6CE92233344B532EF795E126D01 /* UIAnimatableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIAnimatableLabel.swift; path = Source/UnderLineTextField/UIAnimatableLabel.swift; sourceTree = "<group>"; };
-		C712BA584954C082E2DAF7BD8D813629 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD6DDF5F0EAD03486A3B0761D4512468 /* Pods-UnderLineTextField-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UnderLineTextField-Example-resources.sh"; sourceTree = "<group>"; };
-		CDD565315F65CDDD2E24DAFBDF1968BC /* UnderLineTextFieldStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnderLineTextFieldStatus.swift; sourceTree = "<group>"; };
-		D3AC00047303D4C6CA33C1214FB3A19D /* UnderLineTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnderLineTextField-prefix.pch"; sourceTree = "<group>"; };
-		E5AEF3EA0E0467A39DFE8A3BA0168DB9 /* UnderLineTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UnderLineTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02305B264451C52DF36B8D920501F570 /* UnderLineTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnderLineTextField.swift; path = Source/UnderLineTextField/UnderLineTextField.swift; sourceTree = "<group>"; };
+		02ACA667D9BC87D1D6CDD7094E832F43 /* Pods-UnderLineTextField-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UnderLineTextField-Example-umbrella.h"; sourceTree = "<group>"; };
+		068635EFE5BB553813174407D50F8072 /* UnderLineTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnderLineTextField-umbrella.h"; sourceTree = "<group>"; };
+		124C2C088293A137604E7109F02B465B /* UnderLineTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UnderLineTextField.modulemap; sourceTree = "<group>"; };
+		144DAF3614C757BDAABBA78E4B4866FC /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		161FED143DE8DD1AC41D71D22AEA464B /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		25E34EF5671A453947A4DB0C58A03A48 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		299B9E4FEA40B32F612E12911012F588 /* UnderLineTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = UnderLineTextField.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2AB05D22C92E5A571A653D510E552AC0 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		2D148D9B764A5E8D98C9F68F355D0EDB /* UnderLineTextFieldContentStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnderLineTextFieldContentStatus.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3796FD2C9FAD9502B2749ADE5C35460D /* Pods-UnderLineTextField-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UnderLineTextField-Example-frameworks.sh"; sourceTree = "<group>"; };
+		3AAA1F72F8CF5B7EE826D8D247C8DFF3 /* Pods-UnderLineTextField-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UnderLineTextField-Example-dummy.m"; sourceTree = "<group>"; };
+		3B5DE4FFE89C84A8BE0766FA3C920917 /* UIAnimatableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIAnimatableLabel.swift; path = Source/UnderLineTextField/UIAnimatableLabel.swift; sourceTree = "<group>"; };
+		3C5FD357E42A556DEFDC624273D66355 /* Pods-UnderLineTextField-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UnderLineTextField-Example.modulemap"; sourceTree = "<group>"; };
+		3CDA88B95EE9673D9D3B2334704365C5 /* UnderLineTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UnderLineTextField.h; sourceTree = "<group>"; };
+		3F4CE89923369CEB9C2E6EF46B439867 /* UnderLineTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UnderLineTextField.xcconfig; sourceTree = "<group>"; };
+		3F812B71438F709C9BBB7D4B438DAA8B /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		40C5937AEDD4F642E09E0A1980BCC652 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		45FD64C66CE4DDF29ECD54691C69DE81 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		48EFBC475A6AD866A5083DC5F61B3563 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		4AE9B9F4F788CAB59EC3640F839239CB /* Pods-UnderLineTextField-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UnderLineTextField-Example-Info.plist"; sourceTree = "<group>"; };
+		4BC92BE130C0A4CE98F06E9D397E55AF /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		5B3D1E72289667D4BA6D946E25320953 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		5E62545952A3F91C0FFB7163FA3ABB9E /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		6043A60B74B531F62E520A7669D4E907 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		62526768B0933882A844A3CC52757009 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		65D092964DB4DBF0FB9E0B35EE95C2B0 /* Pods_UnderLineTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UnderLineTextField_Example.framework; path = "Pods-UnderLineTextField-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A533BD0DE17143457FB42BF7749CDD /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		69D27B5A4EE9026FE59DC436037548CB /* Extera.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Extera.xcassets; path = "Source/UnderLineTextField/Supporting Files/Extera.xcassets"; sourceTree = "<group>"; };
+		6BA20D94D18B89BCA5CF2600878CAB42 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		6FD7EBBD3D07A16F2203B6DA3ABD99B4 /* UnderLineTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UnderLineTextField.framework; path = UnderLineTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FED7DD645CF7EE688F4FBFE76F4B56A /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		7597745DD02F02027BEB927801E4E7E2 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		75F4579CB97D7B82CEA1E15C4E207813 /* UnderLineTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnderLineTextField-prefix.pch"; sourceTree = "<group>"; };
+		784E71663FDE42A52D425DA752FC02E7 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		7A9E8324D0994261E310D8C9ABB5015C /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		7B0CA159F280934FC92439E961356B34 /* Pods-UnderLineTextField-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UnderLineTextField-Example.release.xcconfig"; sourceTree = "<group>"; };
+		7E291D2D16FACEEA08988E118F890860 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		85EB361537310A98E43BF00388BE04E2 /* UnderLineTextFieldValidateType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnderLineTextFieldValidateType.swift; sourceTree = "<group>"; };
+		8A26D91B0E800F3CC711EB9D4B7D643D /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A10149A39B29287847F1DE3C807382C /* Pods-UnderLineTextField-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UnderLineTextField-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9C12038B34951B9B002DAB0D5FE023DA /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		9C87F70E835D22459F492D40CB584A67 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A156835F5B20B0DE5962C7DD63E2E761 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		A19946C2567C6C9EDA0D4E04F4226043 /* UnderLineTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnderLineTextField-Info.plist"; sourceTree = "<group>"; };
+		A23DE5B5F4B593DDCE0ADE8616B85C5A /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		A6012780B16F0E11A6D06B6B059D3B25 /* Pods-UnderLineTextField-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UnderLineTextField-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A6F1619E6AE6BAD68A1F802AD244BFAB /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		B0A3ECCB7489854CAA077B5B187C912D /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		B2A12656157BC29CB51F2534C8EDF360 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		B318F1E3CB9228E1C8F29276BADC0957 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BFA57917D5E295BADC0B25F3CDB9C4E8 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		C417784A7C0566CA3A4A90F972ECD6E6 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		C65BFCA0A21044C1C3E6F663BB5F9B48 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		CE049667BDCCFF2727464838AAAC025E /* Pods-UnderLineTextField-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UnderLineTextField-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D06C93F8C326CCE0659EBBFEE7284E9F /* UnderLineTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UnderLineTextField-dummy.m"; sourceTree = "<group>"; };
+		D0753348675A695F5D67145D5F9E8CC7 /* VerticalAlignmentTextLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalAlignmentTextLayer.swift; path = Source/UnderLineTextField/VerticalAlignmentTextLayer.swift; sourceTree = "<group>"; };
+		D21B2FDCEA78DB15010A749F9203D21F /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		D5902768DE34E1627B020F4B2FB7BBBE /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		D99ECF8C37862B651932E21125B793CE /* UnderLineTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnderLineTextFieldDelegate.swift; sourceTree = "<group>"; };
+		E21B4EB2CAC44390D976C65ABE1CE2F5 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		E90533E7B350E331EF614F02D3013039 /* UnderLineTextFieldStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnderLineTextFieldStatus.swift; sourceTree = "<group>"; };
+		EC0E4E3541BF32A5C4247EA2CC09B4BE /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		ED05C0772840EE66B3EB754BEF846F7A /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		EF0BAA6CA944A7DA1E94B1A96D030E86 /* UnderLineTextFieldFocusStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnderLineTextFieldFocusStatus.swift; sourceTree = "<group>"; };
+		F5C9D6FEF48994711991A348A7B0B99A /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		F63DC83113A26BB1DB9ED37E0EE3F512 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		F902CDA99715ADA3EC010544308DA63A /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		FA44FCAE24C9623EE9DB517782FBFED1 /* UnderLineTextFieldErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnderLineTextFieldErrors.swift; sourceTree = "<group>"; };
+		FD313B584F4DD046DAD1E1A5DBA2AA9A /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		FED189CE3C9928FFAF66C86038ABFDB1 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BE0737332043E37F24091A07BABE6E3D /* Frameworks */ = {
+		4912EEB9DE48FAAD44B9B6412C6F4182 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8D743481265C284A01A4EEC63DBA1E8 /* Foundation.framework in Frameworks */,
+				53E0A8281004CA0BBC1C56573C9A2426 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBA680024F901B177FD974928ADF95BB /* Frameworks */ = {
+		4B8845DC63CF9FC5082DBD2DEAD19614 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				711A27DA323EF872B11BA6A60AFC8D9C /* Foundation.framework in Frameworks */,
+				124524F9C365A5B3CC1629EDA5E28322 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73A173863657894A01CB54BA862DDBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67776864843D84DC929C1B66FF8C94F6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0179BA50C420DEB2B6E080D3DABA7054 /* Structs and Enums */ = {
+		1152AA942616C52C20FEC479093E599A /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1E6F1FC679215397144D51F008932AB9 /* UnderLineTextFieldContentStatus.swift */,
-				19EB6103B38C5A0B77F737DC720AD015 /* UnderLineTextFieldErrors.swift */,
-				1AF683C7DF7F667D0BF0FCA4EBA65E3E /* UnderLineTextFieldFocusStatus.swift */,
-				CDD565315F65CDDD2E24DAFBDF1968BC /* UnderLineTextFieldStatus.swift */,
-				31C4AC610A50E602AE588F6B0E4FBFEF /* UnderLineTextFieldValidateType.swift */,
+				4410462C8B95B9E9B15E7A3F6D497C0A /* UnderLineTextField */,
 			);
-			name = "Structs and Enums";
-			path = "Source/UnderLineTextField/Structs and Enums";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		18B821EF4D84073571669CC095C3A343 /* Products */ = {
+		1F30219F6739FA96938FA0137FC6D09C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3FE4C6A77B23A9DAC621E345E2DD0332 /* Pods_UnderLineTextField_Example.framework */,
-				E5AEF3EA0E0467A39DFE8A3BA0168DB9 /* UnderLineTextField.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		23DB0071E3246137F77788DEA2D74C88 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C712BA584954C082E2DAF7BD8D813629 /* Info.plist */,
-				0E432CD8D683E718106EBE6B34610B34 /* UnderLineTextField.modulemap */,
-				548D97F59DB32084B22AE52B1130E3F7 /* UnderLineTextField.xcconfig */,
-				15EB322ABC7CF1B3905946EAB1B7AF53 /* UnderLineTextField-dummy.m */,
-				D3AC00047303D4C6CA33C1214FB3A19D /* UnderLineTextField-prefix.pch */,
-				30A4BCF575353CF1B74956999ED346CF /* UnderLineTextField-umbrella.h */,
+				124C2C088293A137604E7109F02B465B /* UnderLineTextField.modulemap */,
+				3F4CE89923369CEB9C2E6EF46B439867 /* UnderLineTextField.xcconfig */,
+				D06C93F8C326CCE0659EBBFEE7284E9F /* UnderLineTextField-dummy.m */,
+				A19946C2567C6C9EDA0D4E04F4226043 /* UnderLineTextField-Info.plist */,
+				75F4579CB97D7B82CEA1E15C4E207813 /* UnderLineTextField-prefix.pch */,
+				068635EFE5BB553813174407D50F8072 /* UnderLineTextField-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/UnderLineTextField";
 			sourceTree = "<group>";
 		};
-		74C52514814987276A0AC81F96C6222F /* Resources */ = {
+		24AC5D79301C9346FDA2EB1D911566E8 /* Structs and Enums */ = {
 			isa = PBXGroup;
 			children = (
-				6AA4434BF0A8F864953694FB7A690552 /* Extera.xcassets */,
+				2D148D9B764A5E8D98C9F68F355D0EDB /* UnderLineTextFieldContentStatus.swift */,
+				FA44FCAE24C9623EE9DB517782FBFED1 /* UnderLineTextFieldErrors.swift */,
+				EF0BAA6CA944A7DA1E94B1A96D030E86 /* UnderLineTextFieldFocusStatus.swift */,
+				E90533E7B350E331EF614F02D3013039 /* UnderLineTextFieldStatus.swift */,
+				85EB361537310A98E43BF00388BE04E2 /* UnderLineTextFieldValidateType.swift */,
 			);
-			name = Resources;
+			name = "Structs and Enums";
+			path = "Source/UnderLineTextField/Structs and Enums";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		427B270BD76A5EF45313FBF29233B96D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				E8EC5F701A0187F87E41B851CBA22728 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				18B821EF4D84073571669CC095C3A343 /* Products */,
-				B8AF85E7979FB3EEAB73B85AC042EF5A /* Targets Support Files */,
+				E9B3907E32293D14238C042AF3BAE652 /* SnapKit */,
 			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		A1C757F14E1C2DC2ADC68B1C6FA3D6D7 /* Protocols */ = {
+		4410462C8B95B9E9B15E7A3F6D497C0A /* UnderLineTextField */ = {
 			isa = PBXGroup;
 			children = (
-				271E22ED537AF16F1CA0AA3171A92DAD /* UnderLineTextFieldDelegate.swift */,
-			);
-			name = Protocols;
-			path = Source/UnderLineTextField/Protocols;
-			sourceTree = "<group>";
-		};
-		AF1CA7F85804DFA25B9F263BF8D0A7E3 /* Pods-UnderLineTextField-Example */ = {
-			isa = PBXGroup;
-			children = (
-				4402A47783C6ACAA44C9E3A32A317C7A /* Info.plist */,
-				29E829056DF2D5CA829C9C77D70B6280 /* Pods-UnderLineTextField-Example.modulemap */,
-				9E5A2BF006767081837265930B5E9F96 /* Pods-UnderLineTextField-Example-acknowledgements.markdown */,
-				8A07E5D086C4E813C7C1D802299BA520 /* Pods-UnderLineTextField-Example-acknowledgements.plist */,
-				758B0B442620F0575576C9781A0DBD8D /* Pods-UnderLineTextField-Example-dummy.m */,
-				5474202B89C1E68D413A4090786C20BF /* Pods-UnderLineTextField-Example-frameworks.sh */,
-				CD6DDF5F0EAD03486A3B0761D4512468 /* Pods-UnderLineTextField-Example-resources.sh */,
-				72ECECCAE5008F45D5691BEB1D8C9B1C /* Pods-UnderLineTextField-Example-umbrella.h */,
-				64217C669FE051A1DE29939C23D140E7 /* Pods-UnderLineTextField-Example.debug.xcconfig */,
-				1B72EF28D070B1C1D2C47CAE175F5F60 /* Pods-UnderLineTextField-Example.release.xcconfig */,
-			);
-			name = "Pods-UnderLineTextField-Example";
-			path = "Target Support Files/Pods-UnderLineTextField-Example";
-			sourceTree = "<group>";
-		};
-		B8AF85E7979FB3EEAB73B85AC042EF5A /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AF1CA7F85804DFA25B9F263BF8D0A7E3 /* Pods-UnderLineTextField-Example */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		DC038C0EEF925AFB5AFF629CBAC021D8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9E71E09B58239410D8A014CD62C76681 /* UnderLineTextField.h */,
-			);
-			name = "Supporting Files";
-			path = "Source/UnderLineTextField/Supporting Files";
-			sourceTree = "<group>";
-		};
-		E8EC5F701A0187F87E41B851CBA22728 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FD0EA0BB88139F45BADCF8C31A708356 /* UnderLineTextField */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		FD0EA0BB88139F45BADCF8C31A708356 /* UnderLineTextField */ = {
-			isa = PBXGroup;
-			children = (
-				C60EE6CE92233344B532EF795E126D01 /* UIAnimatableLabel.swift */,
-				13E49A6813FDE8E3C6A1359D53BC800D /* UnderLineTextField.swift */,
-				90200C42D2DE0FBF3201845C2AD62B3D /* VerticalAlignmentTextLayer.swift */,
-				A1C757F14E1C2DC2ADC68B1C6FA3D6D7 /* Protocols */,
-				74C52514814987276A0AC81F96C6222F /* Resources */,
-				0179BA50C420DEB2B6E080D3DABA7054 /* Structs and Enums */,
-				23DB0071E3246137F77788DEA2D74C88 /* Support Files */,
-				DC038C0EEF925AFB5AFF629CBAC021D8 /* Supporting Files */,
+				3B5DE4FFE89C84A8BE0766FA3C920917 /* UIAnimatableLabel.swift */,
+				02305B264451C52DF36B8D920501F570 /* UnderLineTextField.swift */,
+				D0753348675A695F5D67145D5F9E8CC7 /* VerticalAlignmentTextLayer.swift */,
+				9F36236C02F9729D26DDD0F756B13A69 /* Pod */,
+				C751305AB157DAD3BEEDA02ABD879240 /* Protocols */,
+				648EE86307E3C6439D2CB10223CEBCD5 /* Resources */,
+				24AC5D79301C9346FDA2EB1D911566E8 /* Structs and Enums */,
+				1F30219F6739FA96938FA0137FC6D09C /* Support Files */,
+				7D22FE89B9E53FB81F232BD7E3644E34 /* Supporting Files */,
 			);
 			name = UnderLineTextField;
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		648EE86307E3C6439D2CB10223CEBCD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69D27B5A4EE9026FE59DC436037548CB /* Extera.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7D22FE89B9E53FB81F232BD7E3644E34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA88B95EE9673D9D3B2334704365C5 /* UnderLineTextField.h */,
+			);
+			name = "Supporting Files";
+			path = "Source/UnderLineTextField/Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F36236C02F9729D26DDD0F756B13A69 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7E291D2D16FACEEA08988E118F890860 /* LICENSE */,
+				B318F1E3CB9228E1C8F29276BADC0957 /* README.md */,
+				299B9E4FEA40B32F612E12911012F588 /* UnderLineTextField.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9FD3E3B025143471A4E2BB61D856C7EE /* Pods-UnderLineTextField-Example */ = {
+			isa = PBXGroup;
+			children = (
+				3C5FD357E42A556DEFDC624273D66355 /* Pods-UnderLineTextField-Example.modulemap */,
+				CE049667BDCCFF2727464838AAAC025E /* Pods-UnderLineTextField-Example-acknowledgements.markdown */,
+				9A10149A39B29287847F1DE3C807382C /* Pods-UnderLineTextField-Example-acknowledgements.plist */,
+				3AAA1F72F8CF5B7EE826D8D247C8DFF3 /* Pods-UnderLineTextField-Example-dummy.m */,
+				3796FD2C9FAD9502B2749ADE5C35460D /* Pods-UnderLineTextField-Example-frameworks.sh */,
+				4AE9B9F4F788CAB59EC3640F839239CB /* Pods-UnderLineTextField-Example-Info.plist */,
+				02ACA667D9BC87D1D6CDD7094E832F43 /* Pods-UnderLineTextField-Example-umbrella.h */,
+				A6012780B16F0E11A6D06B6B059D3B25 /* Pods-UnderLineTextField-Example.debug.xcconfig */,
+				7B0CA159F280934FC92439E961356B34 /* Pods-UnderLineTextField-Example.release.xcconfig */,
+			);
+			name = "Pods-UnderLineTextField-Example";
+			path = "Target Support Files/Pods-UnderLineTextField-Example";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C751305AB157DAD3BEEDA02ABD879240 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D99ECF8C37862B651932E21125B793CE /* UnderLineTextFieldDelegate.swift */,
+			);
+			name = Protocols;
+			path = Source/UnderLineTextField/Protocols;
+			sourceTree = "<group>";
+		};
+		C91EDAA5CCFDB0CED5792EE230E47FD8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FED7DD645CF7EE688F4FBFE76F4B56A /* SnapKit.modulemap */,
+				25E34EF5671A453947A4DB0C58A03A48 /* SnapKit.xcconfig */,
+				FD313B584F4DD046DAD1E1A5DBA2AA9A /* SnapKit-dummy.m */,
+				6043A60B74B531F62E520A7669D4E907 /* SnapKit-Info.plist */,
+				5E62545952A3F91C0FFB7163FA3ABB9E /* SnapKit-prefix.pch */,
+				FED189CE3C9928FFAF66C86038ABFDB1 /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1152AA942616C52C20FEC479093E599A /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				427B270BD76A5EF45313FBF29233B96D /* Pods */,
+				E2C9923C110168FDBB757827D3C5A60A /* Products */,
+				F7158ADECDFE7C53FDC05A806E882052 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2C9923C110168FDBB757827D3C5A60A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65D092964DB4DBF0FB9E0B35EE95C2B0 /* Pods_UnderLineTextField_Example.framework */,
+				979486118B3E90C08386079D57962701 /* SnapKit.framework */,
+				6FD7EBBD3D07A16F2203B6DA3ABD99B4 /* UnderLineTextField.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9B3907E32293D14238C042AF3BAE652 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				C417784A7C0566CA3A4A90F972ECD6E6 /* Constraint.swift */,
+				45FD64C66CE4DDF29ECD54691C69DE81 /* ConstraintAttributes.swift */,
+				69A533BD0DE17143457FB42BF7749CDD /* ConstraintConfig.swift */,
+				784E71663FDE42A52D425DA752FC02E7 /* ConstraintConstantTarget.swift */,
+				7597745DD02F02027BEB927801E4E7E2 /* ConstraintDescription.swift */,
+				F63DC83113A26BB1DB9ED37E0EE3F512 /* ConstraintDSL.swift */,
+				B0A3ECCB7489854CAA077B5B187C912D /* ConstraintInsets.swift */,
+				B2A12656157BC29CB51F2534C8EDF360 /* ConstraintInsetTarget.swift */,
+				C65BFCA0A21044C1C3E6F663BB5F9B48 /* ConstraintItem.swift */,
+				A23DE5B5F4B593DDCE0ADE8616B85C5A /* ConstraintLayoutGuide.swift */,
+				144DAF3614C757BDAABBA78E4B4866FC /* ConstraintLayoutGuide+Extensions.swift */,
+				7A9E8324D0994261E310D8C9ABB5015C /* ConstraintLayoutGuideDSL.swift */,
+				62526768B0933882A844A3CC52757009 /* ConstraintLayoutSupport.swift */,
+				D5902768DE34E1627B020F4B2FB7BBBE /* ConstraintLayoutSupportDSL.swift */,
+				3F812B71438F709C9BBB7D4B438DAA8B /* ConstraintMaker.swift */,
+				8A26D91B0E800F3CC711EB9D4B7D643D /* ConstraintMakerEditable.swift */,
+				F902CDA99715ADA3EC010544308DA63A /* ConstraintMakerExtendable.swift */,
+				6BA20D94D18B89BCA5CF2600878CAB42 /* ConstraintMakerFinalizable.swift */,
+				A6F1619E6AE6BAD68A1F802AD244BFAB /* ConstraintMakerPriortizable.swift */,
+				ED05C0772840EE66B3EB754BEF846F7A /* ConstraintMakerRelatable.swift */,
+				9C12038B34951B9B002DAB0D5FE023DA /* ConstraintMultiplierTarget.swift */,
+				E21B4EB2CAC44390D976C65ABE1CE2F5 /* ConstraintOffsetTarget.swift */,
+				161FED143DE8DD1AC41D71D22AEA464B /* ConstraintPriority.swift */,
+				4BC92BE130C0A4CE98F06E9D397E55AF /* ConstraintPriorityTarget.swift */,
+				BFA57917D5E295BADC0B25F3CDB9C4E8 /* ConstraintRelatableTarget.swift */,
+				D21B2FDCEA78DB15010A749F9203D21F /* ConstraintRelation.swift */,
+				F5C9D6FEF48994711991A348A7B0B99A /* ConstraintView.swift */,
+				2AB05D22C92E5A571A653D510E552AC0 /* ConstraintView+Extensions.swift */,
+				EC0E4E3541BF32A5C4247EA2CC09B4BE /* ConstraintViewDSL.swift */,
+				40C5937AEDD4F642E09E0A1980BCC652 /* Debugging.swift */,
+				48EFBC475A6AD866A5083DC5F61B3563 /* LayoutConstraint.swift */,
+				5B3D1E72289667D4BA6D946E25320953 /* LayoutConstraintItem.swift */,
+				A156835F5B20B0DE5962C7DD63E2E761 /* Typealiases.swift */,
+				9C87F70E835D22459F492D40CB584A67 /* UILayoutSupport+Extensions.swift */,
+				C91EDAA5CCFDB0CED5792EE230E47FD8 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		F7158ADECDFE7C53FDC05A806E882052 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FD3E3B025143471A4E2BB61D856C7EE /* Pods-UnderLineTextField-Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0DAC12F81DB82DFA8A443EE863C99009 /* Headers */ = {
+		204CF0D046621AAE06AECC7A6D76DA68 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D2C487218C1B48594928B721A8908D /* UnderLineTextField-umbrella.h in Headers */,
-				2FF40480940B529245F28132420BBD9C /* UnderLineTextField.h in Headers */,
+				5C012339EED5BA959C75D3C38B422ADA /* UnderLineTextField-umbrella.h in Headers */,
+				92B87924C9851AB68199108777EFEEB8 /* UnderLineTextField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		571B9370671034648B032C8A3BB3C747 /* Headers */ = {
+		36DDD3F658A2B775F8B39BBFA6561635 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2814E4255198B28253A69B53EACCD2BA /* Pods-UnderLineTextField-Example-umbrella.h in Headers */,
+				28400157B63F40AA135BF16780AB4B96 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC04AD136BBEA222014AE92D8CB217FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2954E2786B3A6024CC0BB5E15465F45 /* Pods-UnderLineTextField-Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		44ED5CE8843F7ACA18BE09EB7F3FB976 /* Pods-UnderLineTextField-Example */ = {
+		0E28E8FC2A036F4CD02287E456482FCC /* Pods-UnderLineTextField-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35639A0B5891CF887E3CA2E3D309554E /* Build configuration list for PBXNativeTarget "Pods-UnderLineTextField-Example" */;
+			buildConfigurationList = 10D7C94C8154C9D4351AFDE9D141BAB0 /* Build configuration list for PBXNativeTarget "Pods-UnderLineTextField-Example" */;
 			buildPhases = (
-				35FEB5FA0F81D0F7779058038A1A3C77 /* Sources */,
-				BE0737332043E37F24091A07BABE6E3D /* Frameworks */,
-				571B9370671034648B032C8A3BB3C747 /* Headers */,
+				AC04AD136BBEA222014AE92D8CB217FB /* Headers */,
+				126052493E133D921A6AA0150D03BAF2 /* Sources */,
+				4B8845DC63CF9FC5082DBD2DEAD19614 /* Frameworks */,
+				28F3B425423E5B5CB89E03BCE48F3029 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F9F55C2D43F2CBEE11FC8C56B92368C4 /* PBXTargetDependency */,
+				9FEAAB8CB1F773F2E42F033F48DF8765 /* PBXTargetDependency */,
+				50512D0833F482C253EED38737594E1D /* PBXTargetDependency */,
 			);
 			name = "Pods-UnderLineTextField-Example";
 			productName = "Pods-UnderLineTextField-Example";
-			productReference = 3FE4C6A77B23A9DAC621E345E2DD0332 /* Pods_UnderLineTextField_Example.framework */;
+			productReference = 65D092964DB4DBF0FB9E0B35EE95C2B0 /* Pods_UnderLineTextField_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D101AEE48A4163A8E925243B876D59DA /* UnderLineTextField */ = {
+		19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37FA95B5CEC8FE9F2AD896C5DE14E53E /* Build configuration list for PBXNativeTarget "UnderLineTextField" */;
+			buildConfigurationList = 31C2F67A24EFF2D5F6410E6A9D00BB2A /* Build configuration list for PBXNativeTarget "SnapKit" */;
 			buildPhases = (
-				E62A87905101A577E43BF5049D899F31 /* Sources */,
-				EBA680024F901B177FD974928ADF95BB /* Frameworks */,
-				0DAC12F81DB82DFA8A443EE863C99009 /* Headers */,
-				38D4DEF202CD8D84A38C9C560C2E671E /* Resources */,
+				36DDD3F658A2B775F8B39BBFA6561635 /* Headers */,
+				948D48E19F2A3CAC37461E0DA4FF9A87 /* Sources */,
+				73A173863657894A01CB54BA862DDBBA /* Frameworks */,
+				1FA6EE6BB1452EE8D40646CF50CA9922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F053E4403E585BC541528D70CF6895A /* UnderLineTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01EEB9D981B5C0AAB07A804494E27459 /* Build configuration list for PBXNativeTarget "UnderLineTextField" */;
+			buildPhases = (
+				204CF0D046621AAE06AECC7A6D76DA68 /* Headers */,
+				4949839D96E070B340C886A4780ECCC3 /* Sources */,
+				4912EEB9DE48FAAD44B9B6412C6F4182 /* Frameworks */,
+				C3CCBB65EA11576E3D39F3474478829E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -285,93 +485,151 @@
 			);
 			name = UnderLineTextField;
 			productName = UnderLineTextField;
-			productReference = E5AEF3EA0E0467A39DFE8A3BA0168DB9 /* UnderLineTextField.framework */;
+			productReference = 6FD7EBBD3D07A16F2203B6DA3ABD99B4 /* UnderLineTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1000;
-				TargetAttributes = {
-					D101AEE48A4163A8E925243B876D59DA = {
-						LastSwiftMigration = 1000;
-					};
-				};
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 18B821EF4D84073571669CC095C3A343 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E2C9923C110168FDBB757827D3C5A60A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				44ED5CE8843F7ACA18BE09EB7F3FB976 /* Pods-UnderLineTextField-Example */,
-				D101AEE48A4163A8E925243B876D59DA /* UnderLineTextField */,
+				0E28E8FC2A036F4CD02287E456482FCC /* Pods-UnderLineTextField-Example */,
+				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
+				8F053E4403E585BC541528D70CF6895A /* UnderLineTextField */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		38D4DEF202CD8D84A38C9C560C2E671E /* Resources */ = {
+		1FA6EE6BB1452EE8D40646CF50CA9922 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4DDB2E52F0A047FA3A59C3C5B999604 /* Extera.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F3B425423E5B5CB89E03BCE48F3029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CCBB65EA11576E3D39F3474478829E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BEEBA3862431874B0C731ADBFC2CC3 /* Extera.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		35FEB5FA0F81D0F7779058038A1A3C77 /* Sources */ = {
+		126052493E133D921A6AA0150D03BAF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				824FB0595B4B2C347194627BEF995E27 /* Pods-UnderLineTextField-Example-dummy.m in Sources */,
+				BDF1F717DAE4ACD2D717897D282E6A6F /* Pods-UnderLineTextField-Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E62A87905101A577E43BF5049D899F31 /* Sources */ = {
+		4949839D96E070B340C886A4780ECCC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A82296D35273634A218C7052CC7A209 /* UIAnimatableLabel.swift in Sources */,
-				14B93076178CDE0968EFAA810F722036 /* UnderLineTextField-dummy.m in Sources */,
-				FBFFB63D9E63CB1563B386461387C83D /* UnderLineTextField.swift in Sources */,
-				2FB24691E40B8A6FC7762D6CE747A21C /* UnderLineTextFieldContentStatus.swift in Sources */,
-				28B1C407B07577B004FEF379C1E8958A /* UnderLineTextFieldDelegate.swift in Sources */,
-				E2B63DCEEBC4E08DAA3E756BE2FB9E08 /* UnderLineTextFieldErrors.swift in Sources */,
-				04793465D024CBEB80345668162DDDF5 /* UnderLineTextFieldFocusStatus.swift in Sources */,
-				BC151A09B5DB7528C87AE9BDCDEFD27C /* UnderLineTextFieldStatus.swift in Sources */,
-				B8D8CB01585501EAB164EF4255072A2F /* UnderLineTextFieldValidateType.swift in Sources */,
-				55463306914DA5FC497728B83573D968 /* VerticalAlignmentTextLayer.swift in Sources */,
+				C17450D20B8B9C0CB67E392F729DBC9D /* UIAnimatableLabel.swift in Sources */,
+				817E4B85539E68BEE32353B3271CC5F2 /* UnderLineTextField-dummy.m in Sources */,
+				C0D67C782140CF6156BEC4E7A44B7802 /* UnderLineTextField.swift in Sources */,
+				A7101591C5EE2E044B5B3A87BA6AAC4E /* UnderLineTextFieldContentStatus.swift in Sources */,
+				5E1D627F9A986C60CAA95BFF0E07E578 /* UnderLineTextFieldDelegate.swift in Sources */,
+				A6673CA68E30B54DE5B2A3FC26FEF1F3 /* UnderLineTextFieldErrors.swift in Sources */,
+				1DF884B7E3B22CE985EA2DD10BF7CFAD /* UnderLineTextFieldFocusStatus.swift in Sources */,
+				F4AD0A86A48E1232A07E904913F17C05 /* UnderLineTextFieldStatus.swift in Sources */,
+				B5DB71AC01A31034154EE662CE604A51 /* UnderLineTextFieldValidateType.swift in Sources */,
+				8FBB077A5E2A580630B80818F146092C /* VerticalAlignmentTextLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948D48E19F2A3CAC37461E0DA4FF9A87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCEFF1B52226DE5ABB2D0043442FE61 /* Constraint.swift in Sources */,
+				A4070B8C9BD30965648B2876CD3C1C43 /* ConstraintAttributes.swift in Sources */,
+				A04D46C4C48247D004BAE5C7AD6E05A3 /* ConstraintConfig.swift in Sources */,
+				9EE2D363A721ACFA89B5B899E1987633 /* ConstraintConstantTarget.swift in Sources */,
+				9E6184458532BFF2E3E3F804C54BD0E7 /* ConstraintDescription.swift in Sources */,
+				6B43F2F53DD6C161CF414A9BF67550C5 /* ConstraintDSL.swift in Sources */,
+				54D1686EFA926E23C4BED5EEE7A19C08 /* ConstraintInsets.swift in Sources */,
+				F41CA723E31884664B9C032D90EAEF1A /* ConstraintInsetTarget.swift in Sources */,
+				CA0FAE669FAB7067D09F7007AD838E19 /* ConstraintItem.swift in Sources */,
+				DBB93D3827327B8FB4CFA164C03357E5 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				FFE7A02118B5288BC94F7422D6CFEB3F /* ConstraintLayoutGuide.swift in Sources */,
+				276EE563D9B688173DBBF47DB80D72D8 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				095547A88EE037F12395713A469C9B60 /* ConstraintLayoutSupport.swift in Sources */,
+				F6C7F81AA5BBC4042A3A78D5EA8E62A4 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				5C376607904258A10F4DDD6D42EFC491 /* ConstraintMaker.swift in Sources */,
+				4268E348E6D5E9037A640ADC8E065009 /* ConstraintMakerEditable.swift in Sources */,
+				FF0E3F8B3FB568ACBB1BC433D67ED093 /* ConstraintMakerExtendable.swift in Sources */,
+				0FA8E62C7A4A6DA9BB841007B5E16CD4 /* ConstraintMakerFinalizable.swift in Sources */,
+				8B8BE709B46663F60DB6A661A3B2A28A /* ConstraintMakerPriortizable.swift in Sources */,
+				35CDFA197D8219EB8DEFC227259A5C03 /* ConstraintMakerRelatable.swift in Sources */,
+				A3DEA82F229FDF7C9444CEFEE3D9AB84 /* ConstraintMultiplierTarget.swift in Sources */,
+				72C2B5D60A24B4B663C8994276A962B6 /* ConstraintOffsetTarget.swift in Sources */,
+				A482F623A133B7E947C01456C779622A /* ConstraintPriority.swift in Sources */,
+				14E9ACC5796C5E35C84DD6659BEB788F /* ConstraintPriorityTarget.swift in Sources */,
+				E85BBB972867783044ADCD772438150F /* ConstraintRelatableTarget.swift in Sources */,
+				C1C2B61E08DAD3B59BA5D82964D39C3C /* ConstraintRelation.swift in Sources */,
+				77A618FE4FF299682F776C974300EBA1 /* ConstraintView+Extensions.swift in Sources */,
+				5544BDD6A14E06C7FB3A878BC3E96299 /* ConstraintView.swift in Sources */,
+				DEC3E541DB551729EC407FA6566CEE54 /* ConstraintViewDSL.swift in Sources */,
+				9432185152350A4A90F6DD19C33AC057 /* Debugging.swift in Sources */,
+				BF7843175A0FB0180B6F4C0249B8874A /* LayoutConstraint.swift in Sources */,
+				7ED12926E82C9D1DE457504DA75B80A9 /* LayoutConstraintItem.swift in Sources */,
+				5DBFB9A0499F04CBE806486211A4ABD0 /* SnapKit-dummy.m in Sources */,
+				0D7A7F3919AE48736753181756DE8AE8 /* Typealiases.swift in Sources */,
+				98AE4E2F24A858A47B5A1B405CEAD8FD /* UILayoutSupport+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F9F55C2D43F2CBEE11FC8C56B92368C4 /* PBXTargetDependency */ = {
+		50512D0833F482C253EED38737594E1D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UnderLineTextField;
-			target = D101AEE48A4163A8E925243B876D59DA /* UnderLineTextField */;
-			targetProxy = 95824D51A226674EDB8C9000C2FE8C4B /* PBXContainerItemProxy */;
+			target = 8F053E4403E585BC541528D70CF6895A /* UnderLineTextField */;
+			targetProxy = 3BE54D1442373D58707B6B8C7C8E0FE1 /* PBXContainerItemProxy */;
+		};
+		9FEAAB8CB1F773F2E42F033F48DF8765 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = BC841153BB407063DB8EC3D7A60BD47B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		308C2AB1CE018AA460D44A7AA3F31C65 /* Release */ = {
+		196D3B73ECBEDDBCD6F8B048D426F949 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B72EF28D070B1C1D2C47CAE175F5F60 /* Pods-UnderLineTextField-Example.release.xcconfig */;
+			baseConfigurationReference = 25E34EF5671A453947A4DB0C58A03A48 /* SnapKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -382,7 +640,71 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-UnderLineTextField-Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		69DE23DF0F306580DE40DCC0E755D5B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25E34EF5671A453947A4DB0C58A03A48 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6BECF10D94CCB75D51E8350E9353FF55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6012780B16F0E11A6D06B6B059D3B25 /* Pods-UnderLineTextField-Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UnderLineTextField-Example/Pods-UnderLineTextField-Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -392,81 +714,16 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_UnderLineTextField_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3A3214C50B6AD8BF64DD508E219B1598 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 548D97F59DB32084B22AE52B1130E3F7 /* UnderLineTextField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UnderLineTextField/UnderLineTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UnderLineTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UnderLineTextField/UnderLineTextField.modulemap";
-				PRODUCT_NAME = UnderLineTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		695E29255D7F15E2A1801BFD03444FF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 548D97F59DB32084B22AE52B1130E3F7 /* UnderLineTextField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UnderLineTextField/UnderLineTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UnderLineTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UnderLineTextField/UnderLineTextField.modulemap";
-				PRODUCT_NAME = UnderLineTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -476,6 +733,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -497,7 +755,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -516,14 +773,17 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -533,6 +793,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -554,7 +815,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -575,19 +835,55 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		DCCD50D17759A82B3462A80DA78FFD1A /* Debug */ = {
+		B79E71257D686B1F5506CA6250E8C15B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64217C669FE051A1DE29939C23D140E7 /* Pods-UnderLineTextField-Example.debug.xcconfig */;
+			baseConfigurationReference = 7B0CA159F280934FC92439E961356B34 /* Pods-UnderLineTextField-Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UnderLineTextField-Example/Pods-UnderLineTextField-Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UnderLineTextField-Example/Pods-UnderLineTextField-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5610B47CFF500742F098A67ED5C760F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F4CE89923369CEB9C2E6EF46B439867 /* UnderLineTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -598,21 +894,50 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-UnderLineTextField-Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UnderLineTextField/UnderLineTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UnderLineTextField/UnderLineTextField-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-UnderLineTextField-Example/Pods-UnderLineTextField-Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_UnderLineTextField_Example;
+				MODULEMAP_FILE = "Target Support Files/UnderLineTextField/UnderLineTextField.modulemap";
+				PRODUCT_MODULE_NAME = UnderLineTextField;
+				PRODUCT_NAME = UnderLineTextField;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD4711F0ECE75476FF07872E9863661C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F4CE89923369CEB9C2E6EF46B439867 /* UnderLineTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UnderLineTextField/UnderLineTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UnderLineTextField/UnderLineTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UnderLineTextField/UnderLineTextField.modulemap";
+				PRODUCT_MODULE_NAME = UnderLineTextField;
+				PRODUCT_NAME = UnderLineTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -622,34 +947,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		01EEB9D981B5C0AAB07A804494E27459 /* Build configuration list for PBXNativeTarget "UnderLineTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
-				6F9224530522DD3C735EC96CF142642E /* Release */,
+				FD4711F0ECE75476FF07872E9863661C /* Debug */,
+				D5610B47CFF500742F098A67ED5C760F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35639A0B5891CF887E3CA2E3D309554E /* Build configuration list for PBXNativeTarget "Pods-UnderLineTextField-Example" */ = {
+		10D7C94C8154C9D4351AFDE9D141BAB0 /* Build configuration list for PBXNativeTarget "Pods-UnderLineTextField-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DCCD50D17759A82B3462A80DA78FFD1A /* Debug */,
-				308C2AB1CE018AA460D44A7AA3F31C65 /* Release */,
+				6BECF10D94CCB75D51E8350E9353FF55 /* Debug */,
+				B79E71257D686B1F5506CA6250E8C15B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37FA95B5CEC8FE9F2AD896C5DE14E53E /* Build configuration list for PBXNativeTarget "UnderLineTextField" */ = {
+		31C2F67A24EFF2D5F6410E6A9D00BB2A /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A3214C50B6AD8BF64DD508E219B1598 /* Debug */,
-				695E29255D7F15E2A1801BFD03444FF0 /* Release */,
+				196D3B73ECBEDDBCD6F8B048D426F949 /* Debug */,
+				69DE23DF0F306580DE40DCC0E755D5B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

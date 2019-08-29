@@ -4,5 +4,5 @@ target 'UnderLineTextField-Example' do
   use_frameworks!
 
   pod 'UnderLineTextField', :path => '../'
-
+  pod 'SnapKit', '~> 4.0.1'
 end
