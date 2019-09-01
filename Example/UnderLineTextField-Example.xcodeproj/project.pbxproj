@@ -362,7 +362,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LDC94DLGLZ;
 				INFOPLIST_FILE = "UnderLineTextField-Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mohammadalijf.UnderLineTextField-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -377,15 +377,15 @@
 			baseConfigurationReference = 9312EF939369A27AF5666424 /* Pods-UnderLineTextField-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LDC94DLGLZ;
 				INFOPLIST_FILE = "UnderLineTextField-Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mohammadalijf.UnderLineTextField-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Wildcard for adhoc";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard for dev";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

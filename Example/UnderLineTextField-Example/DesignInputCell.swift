@@ -42,7 +42,7 @@ class DesignInputCell: UITableViewCell {
             inputContent.activePlaceholderTextColor = .blue
             inputContent.inactiveLineColor = .gray
             
-            inputContent.font = UIFont.systemFont(ofSize: 15, weight: .medium)
+            inputContent.font = UIFont.systemFont(ofSize: 15)
             inputContent.clearButton.tintColor = .gray
         }
     }

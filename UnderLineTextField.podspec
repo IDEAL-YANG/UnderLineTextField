@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 s.name = "UnderLineTextField"
 s.platform = :ios
-s.ios.deployment_target	= "9.0"
+s.ios.deployment_target	= "8.0"
 s.requires_arc = true
 s.module_name = "UnderLineTextField"
 s.version = "2.1.0"

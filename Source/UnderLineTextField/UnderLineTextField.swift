@@ -478,16 +478,6 @@ extension UnderLineTextField {
         }
     }
 
-    open override var semanticContentAttribute: UISemanticContentAttribute {
-        get {
-            return super.semanticContentAttribute
-        }
-        set {
-            super.semanticContentAttribute = newValue
-            changeSementics()
-        }
-    }
-
     override open func draw(_ rect: CGRect) {
         super.draw(rect)
         if lineLayer.superlayer == nil {
@@ -501,7 +491,6 @@ extension UnderLineTextField {
     override open func layoutSubviews() {
         super.layoutSubviews()
         lineLayer.path = createLinePath().cgPath
-        changeSementics()
         isLayoutCalled = true
     }
 
@@ -540,16 +529,6 @@ extension UnderLineTextField {
 // MARK: - Methods
 //================
 extension UnderLineTextField {
-
-    func changeSementics() {
-        if semanticContentAttribute == .forceRightToLeft {
-//            errorLabel.textLayer.alignmentMode = CATextLayerAlignmentMode.right
-            placeholderLabel.textLayer.alignmentMode = CATextLayerAlignmentMode.right
-        } else {
-//            errorLabel.textLayer.alignmentMode = CATextLayerAlignmentMode.left
-            placeholderLabel.textLayer.alignmentMode = CATextLayerAlignmentMode.left
-        }
-    }
 
     /// change visibilty of error label
     func changeErrorLabelVisibilty(visible: Bool) {
