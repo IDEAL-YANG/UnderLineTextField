@@ -5,18 +5,18 @@
   },
   "requires_arc": true,
   "module_name": "UnderLineTextField",
-  "version": "2.1.0",
-  "summary": "Simple UITextfield Subclass with state",
-  "description": "simple UITextField subclass with state and floating placeholder",
-  "homepage": "https://github.com/mohammadalijf/UnderLineTextField",
+  "version": "3.0.0",
+  "summary": "Custom Simple UITextfield Subclass with state",
+  "description": "Custom Simple UITextField subclass with state and floating placeholder",
+  "homepage": "https://github.com/IDEAL-YANG/UnderLineTextField",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
-  "authors": "Mohammad Ali Jafarian",
+  "authors": "IDEAL-YANG",
   "source": {
-    "git": "https://github.com/mohammadalijf/UnderLineTextField.git",
-    "tag": "2.1.0"
+    "git": "https://github.com/IDEAL-YANG/UnderLineTextField.git",
+    "tag": "3.0.0"
   },
   "source_files": "Source/UnderLineTextField/**/*.{swift,h}",
   "resources": "Source/UnderLineTextField/Supporting Files/Extera.xcassets"
