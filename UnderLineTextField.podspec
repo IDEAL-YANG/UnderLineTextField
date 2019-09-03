@@ -4,8 +4,8 @@ s.platform = :ios
 s.ios.deployment_target	= "8.0"
 s.requires_arc = true
 s.module_name = "UnderLineTextField"
-s.version = "3.0.0"
-s.summary = "Custom Simple UITextfield Subclass with state"
+s.version = "3.0.1"
+s.summary = "Custom Simple UITextfield Subclass with state, fix validation type."
 s.description = "Custom Simple UITextField subclass with state and floating placeholder"
 s.homepage = "https://github.com/IDEAL-YANG/UnderLineTextField"
 s.license = { :type => 'MIT', :file => 'LICENSE' }
