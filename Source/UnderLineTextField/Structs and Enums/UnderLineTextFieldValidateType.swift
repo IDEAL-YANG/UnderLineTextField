@@ -18,7 +18,7 @@ public struct UnderLineTextFieldValidateType: OptionSet {
     /// whenever validate() gets called
     public static let onCommit = UnderLineTextFieldValidateType(rawValue: 1 << 2)
     /// allways validate, when activated, when changed, when deactivated
-    public static let always = UnderLineTextFieldValidateType(rawValue: 1 << 2)
+    public static let always = UnderLineTextFieldValidateType(rawValue: 1 << 3)
 
     public init(rawValue: UInt) {
         self.rawValue = rawValue

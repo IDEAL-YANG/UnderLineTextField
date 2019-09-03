@@ -55,7 +55,7 @@ extension DemoViewController: UITableViewDataSource,UITableViewDelegate {
         
         cell.inputContent.placeholder = "TitleTitle---\(indexPath.row)"
         cell.inputContent.delegate = self
-        cell.inputContent.validationType = .afterEdit
+        cell.inputContent.validationType = .onCommit
         
         return cell
     }
