@@ -95,9 +95,7 @@ open class UnderLineTextField: UITextField {
                 return
             }
             layoutIfNeeded()
-            if contentStatus == .filled {
-                setPlaceholderPlace(isUp: true, isAnimated: true)
-            }
+            setPlaceholderPlace(isUp: contentStatus == .filled, isAnimated: true)
             setNeedsDisplay()
         }
     }
