@@ -428,6 +428,9 @@ extension UnderLineTextField {
             return super.text
         }
         set {
+            guard newValue != text else {
+                return
+            }
             super.text = newValue
             decideContentStatus(fromText: text)
             setNeedsDisplay()
